@@ -17,5 +17,6 @@ require('lazy').setup({
     require 'custom.plugins.treesitter',
     require 'custom.plugins.lsp',
     require 'custom.plugins.autocompletion',
+    require 'custom.plugins.indent-blankline',
 })
 
