@@ -1,5 +1,5 @@
-require 'lua.custom.vimconfigs'
-require 'lua.custom.keymaps'
+require 'custom.vimconfigs'
+require 'custom.keymaps'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -11,11 +11,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-	require 'lua.custom.plugins.neo-tree',
-	require 'lua.custom.plugins.colortheme',
-	require 'lua.custom.plugins.telescope',
-    require 'lua.custom.plugins.treesitter',
-    require 'lua.custom.plugins.lsp',
-
+	require 'custom.plugins.neo-tree',
+	require 'custom.plugins.colortheme',
+	require 'custom.plugins.telescope',
+    require 'custom.plugins.treesitter',
+    require 'custom.plugins.lsp',
+    require 'custom.plugins.autocompletion',
 })
 
